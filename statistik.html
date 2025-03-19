@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block title %}Statistik{% endblock %}
+{% block content %}
+    <h2>Statistik</h2>
+    <ul>
+        {% for item in statistik %}
+            <li>{{ item.kategori }}: {{ item.nilai }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
